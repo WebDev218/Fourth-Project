@@ -1,0 +1,58 @@
+/* ==========
+ Variables
+========== */
+
+$breakpoints: (
+  'xs': 575px,
+  'sm': 576px,
+  'med':768px,
+  'lar': 992px,
+);
+
+$break-xs: 575px;
+$break-s: 576px;
+$break-m: 768px;
+$break-l: 992px;
+
+// Measurements
+$max-w: 1400px;
+
+  // Flex
+  $med-flex: 100px;
+
+  // margins/paddings
+  $standard-mp: 10px;
+
+
+// Colors
+$grey: #ccc;
+$dark-grey: #777;
+$white: #fff;
+$mint: #58e1c1;
+
+$buttons: (
+  'default': #51ddfc,
+  'error': #e4757a,
+  'info': #927bc1,
+  'success': #63cc82,
+  'warning': #fd7856,
+);
+
+/* ==========
+ Maps
+========== */
+
+$color-map: (
+    '1': #927bc1,
+    '2': #fd7856,
+    '3': #deb2ee,
+    '4': #7ee6fd,
+    '5': #88d9a0,
+    '6': #4da2bb,
+    '7': #ec9fa3,
+    '8': #fd9f85,
+    '9': #e4757a,
+    '10': #63cc82,
+    '11': #51ddfc,
+    '12': #80e8d1,
+);

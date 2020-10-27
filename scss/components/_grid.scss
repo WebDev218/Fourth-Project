@@ -1,0 +1,62 @@
+/* ============================================= */
+/*              Grid System                      */
+/* ============================================= */
+
+.container {
+  padding: 0 $standard-mp;
+  @media (min-width: map-get($breakpoints, 'med')) {
+    max-width: $max-w;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+  }  
+}
+
+.row {
+  display: flex;
+  flex-direction: column;
+  padding: 1em $standard-mp;
+  @media (min-width: map-get($breakpoints, 'med')) {
+    flex-direction: row;
+  }  
+}
+
+[class^=col] {
+  margin-top: $standard-mp;
+  flex-basis: 100%;
+  min-height: 25px;
+  padding: $standard-mp;
+  border-radius: 5px;
+
+  @media (min-width: map-get($breakpoints, 'med')) {
+    display: flex;
+    justify-content: center;
+    margin-top: 0;
+    align-items: center;
+}  
+}
+
+.theme.col {
+  @include theme-colors($color-map);  
+}
+.card {
+  flex-basis: 100%;
+}
+
+
+@media (min-width: map-get($breakpoints, 'med')) {
+  [class^=col] + [class^=col] {
+    margin-left: $standard-mp;
+  }
+
+  .col {
+    @include columns(12);
+  }
+
+  .centered {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+  }
+}  
+

@@ -1,0 +1,30 @@
+/* ============================================= */
+/*              Images                           */
+/* ============================================= */
+
+.img {
+  &-avatar {
+    @include image; 
+    max-height: 100%;
+  }
+
+  &-frame {
+    @include image;
+    padding: 13px;
+    border: 1px solid $grey;
+  }
+
+  &-logo {
+    @include image {
+    margin-top: initial;
+    max-width: initial;    
+    }
+  }
+}
+
+@media (min-width: map-get($breakpoints, 'med')) {
+  .logo {
+    margin-left: initial;
+    margin-right: initial;
+  }
+}

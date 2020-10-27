@@ -1,0 +1,24 @@
+@mixin image() {
+	display: block;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 10px;
+    max-width: 100%;
+    @content
+}    
+
+@mixin theme-colors($map) {
+	@each $cell, $color in $map {
+		&-#{$cell} {
+			background-color: $color;
+		}
+	}
+}
+
+@mixin columns($column-count:2) {
+	@for $i from 1 through $column-count {
+		&-#{$i} {
+			flex-basis: ($i * (100 / $column-count)) * 1%;			
+		}
+	}
+}
